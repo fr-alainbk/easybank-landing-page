@@ -78,8 +78,18 @@
   .intro__left {
     display: flex;
     flex-direction: column;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
+    margin-left: auto;
     align-items: center;
+    margin-right: auto;
+    width: 19rem;
+  }
+
+  .intro__left > h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    width: 100%;
+    color: var(--dark-blue);
   }
 
   .intro__button {
