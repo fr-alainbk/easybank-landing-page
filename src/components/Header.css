@@ -8,7 +8,7 @@
   margin-bottom: 0;
   z-index: 100;
   position: relative;
-  top: 0;
+  overflow: hidden;
 }
 
 .header__logo {
@@ -58,7 +58,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .header__options {
     display: flex;
     flex-direction: column;
@@ -87,9 +87,16 @@
   .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25rem;
+    overflow: hidden;
+    height: auto;
   }
 
+  .header__button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .header__button {
     display: none;
   }

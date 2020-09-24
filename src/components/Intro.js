@@ -19,6 +19,11 @@ function Intro() {
           alt="background"
         />
         <img
+          className="intro__backgroundMobile"
+          src=".././images/bg-intro-mobile.svg"
+          alt="background"
+        />
+        <img
           className="intro__frontImg"
           src=".././images/image-mockups.png"
           alt="mockups"

@@ -54,6 +54,10 @@
   height: 40rem;
 }
 
+.intro__backgroundMobile {
+  display: none;
+}
+
 .intro__frontImg {
   position: relative;
   z-index: 1;
@@ -67,14 +71,8 @@
   .intro {
     display: flex;
     flex-direction: column-reverse;
-  }
-
-  .intro__frontImg {
-    /* position: relative; */
-    /* z-index: 1; */
-    /* left: 4rem; */
-    height: 50rem;
-    /* top: 20rem; */
+    overflow: hidden;
+    padding-top: 20rem;
   }
 
   .intro__left {
@@ -86,5 +84,29 @@
 
   .intro__button {
     margin-bottom: 5rem;
+  }
+
+  .intro__backgroundImg {
+    /* height: 40rem; */
+    display: none;
+  }
+
+  .intro__backgroundMobile {
+    display: initial;
+  }
+
+  .intro__frontImg {
+    position: relative;
+    z-index: 1;
+    margin-top: -45rem;
+    /* margin-right: 0rem; */
+    left: 4rem;
+    height: 55rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .intro {
+    overflow: hidden;
   }
 }
